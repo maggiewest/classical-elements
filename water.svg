@@ -1,4 +1,35 @@
 <svg id="water" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 285.93 250">
   <title>Water symbol</title>
+  <defs>
+        <style type="text/css">
+          @keyframes fall {
+  from {
+    -webkit-transform: rotate(0) translateX(0);
+    transform: rotate(0) translateX(0);
+    opacity: 1;
+  }
+  50%,
+  60% {
+    -webkit-transform: rotate(90deg) translateX(0);
+    transform: rotate(90deg) translateX(0);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: rotate(90deg) translateX(200px);
+    transform: rotate(90deg) translateX(200px);
+    opacity: 0;
+  }
+}
+          #water path{
+            fill-opacity: 0;
+            animation-name: fillop;
+            animation-duration: 5s;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+            transform-origin: 50% 50%;	
+          }
+      </style>
+    </defs>
+  
   <path d="M1.22,13.46l134,232.06a9,9,0,0,0,15.54,0l134-232.06A9,9,0,0,0,276.94,0H9A9,9,0,0,0,1.22,13.46ZM261.58,24.56,151.93,214.47,42.29,24.56Z" />
 </svg>
